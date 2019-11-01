@@ -5,12 +5,85 @@
         <meta name="description" content="Technology Page">
         <meta name="author" content="Jacobus Calvin">
         <title>Technology</title>
+
+        <link rel="stylesheet" href="../assets/css/navbar.css">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/technology.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+
+        <script src="../assets/js/navbar-scroll.js"></script>
+        <script src="../assets/js/section-scroll.js"></script>
+
+        <script>
+            $(function(){
+                $.scrollify({
+                    section:".tech-section-content",
+                });
+            });
+        </script>
     </head>
     <body>
         <!-- Navbar -->
+        <div id="navbar">
+            <div class="nav-left">
+                <a href="#">
+                    <img class="logo" src="../assets/images/logo-white.svg" alt="logo">
+                </a>
+            </div>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="models.html">MODELS</a></li>
+                    <li><a href="technology.html">TECHNOLOGY</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                ORDER
+            </div>
+        </div>
 
         <!-- Body -->
+        <section class="tech-section-content">
+            <div id="banner-tech-1">
 
+            </div>
+        </section>
+        
+        <section class="tech-section-content">
+            <div id="banner-tech-2">
+
+            </div>
+            <div class="description-tech">
+                    
+            </div>
+        </section>
+        
+        <section class="tech-section-content video">
+            <video autoplay muted loop id="charge-video">
+                <source src="../assets/videos/charging_overview_hero.mp4" alt="Charging Wherever You Want">
+            </video>
+        </section>
+
+        <section class="tech-section-content">
+            <div id="banner-tech-3">
+
+            </div>
+            <div class="description-tech">
+                    
+            </div>
+        </section>
+
+        <section class="tech-section-content">
+                <div id="banner-tech-4">
+    
+                </div>
+                <div class="description-tech">
+                        
+                </div>
+            </section>
         <!-- Footer -->
+
     </body>
 </html>

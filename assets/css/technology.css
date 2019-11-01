@@ -1,0 +1,60 @@
+body {
+    scroll-behavior: smooth;
+}
+
+.tech-section-content {
+    width: 100%;
+    height: 100vh;
+}
+
+.tech-section-content > video{
+    width: 100%;
+    height: 80vh;
+}
+
+#banner-tech-1 {
+    background-image: url('../images/home-charger.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+#banner-tech-2 {
+    background-image: url('../images/wall-power.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80%;
+    width: 100%;
+}
+
+#banner-tech-3 {
+    background-image: url('../images/where_you_park.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80%;
+    width: 100%;
+}
+
+#banner-tech-4 {
+    background-image: url('../images/on_the_road.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80%;
+    width: 100%;
+}
+
+.description-tech {
+    background-color: #f1f1f1;
+    height: 20%;
+    width: 100%;
+}
+
+#charge-video {
+    position: absolute;
+    height: auto;
+    width: 100%;
+}
