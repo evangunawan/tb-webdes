@@ -2,14 +2,13 @@ body {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .tech-section-content {
     width: 100%;
     height: 100vh;
-}
-
-.tech-section-content > video{
-    width: 100%;
-    height: 80vh;
 }
 
 #banner-tech-1 {
@@ -55,6 +54,11 @@ body {
 
 #charge-video {
     position: absolute;
-    height: auto;
+    object-fit: cover;
+    height: 100vh;
     width: 100%;
+}
+
+.navbar-transparent {
+    background-color: transparent !important;
 }

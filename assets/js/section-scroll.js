@@ -12,8 +12,16 @@ $(function(){
         overflowScroll: true,
         updateHash: true,
         touchScroll:true,
-        before:function() {},
-        after:function() {},
+        before:function() {
+            currentSection = $.scrollify.current();
+            if(currentSection[0].className.includes("section-video")){
+                $("#navbar").addClass('navbar-transparent');
+            } else {
+                $("#navbar").removeClass('navbar-transparent');
+            }
+        },
+        after:function() {
+        },
         afterResize:function() {},
         afterRender:function() {}
     });
