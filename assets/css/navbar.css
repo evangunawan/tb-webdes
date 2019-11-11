@@ -42,3 +42,9 @@
 .bg-dark {
   background-color: #333;
 }
+
+/* Technology Navbar */
+
+.navbar-transparent {
+  background-color: transparent !important;
+}

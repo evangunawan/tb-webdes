@@ -1,17 +1,14 @@
 $(function(){
     $.scrollify({
-        section : "section",
-        sectionName : "section-name",
+        section : ".tech-section-content",
+        // sectionName : "section-name",
         interstitialSection : "",
         easing: "easeOutExpo",
-        scrollSpeed: 1000,
+        scrollSpeed: 800,
         offset : 0,
-        scrollbars: true,
+        scrollbars : false,
         standardScrollElements: "",
         setHeights: true,
-        overflowScroll: true,
-        updateHash: true,
-        touchScroll:true,
         before:function() {
             currentSection = $.scrollify.current();
             if(currentSection[0].className.includes("section-video")){
