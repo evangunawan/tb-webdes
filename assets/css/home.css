@@ -1,7 +1,42 @@
+h2 {
+  margin: 0px;
+}
+
+h2.section-title {
+  margin-bottom: 12px;
+}
+
 .banner {
   background-image: url('../images/main-banner.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50%;
   height: 100vh;
   width: 100%;
+}
+
+.section-content .content-wrap {
+  /* display: block; */
+  height: 350px;
+}
+
+.content-tech {
+  overflow: auto;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/technology-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc { 
+  display: inline-block;
+  text-align: center;
+}
+
+.desc > h2 { 
+  font-size: 1.8rem;
 }
