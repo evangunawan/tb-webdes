@@ -39,4 +39,11 @@ h2.section-title {
 
 .desc > h2 { 
   font-size: 1.8rem;
+  margin: 8px 0px;
+}
+
+.desc > p {
+  margin-top: 0px;
+  color: #ddd;
+  font-size: 0.9rem;
 }

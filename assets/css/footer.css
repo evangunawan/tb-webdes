@@ -38,6 +38,25 @@
 
 }
 
+.footer-item .socials {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin-top: 24px;
+
+}
+
+.socials a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-right: 16px;
+}
+
+.socials a:hover {
+    color: #aaa;
+}
+
 .footer-item .contacts, .footer-item .links  {
     list-style-type: none;
     font-family: 'Noto Sans', sans-serif;
