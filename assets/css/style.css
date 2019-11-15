@@ -65,3 +65,9 @@ a.btn-primary {
   border-color: white;
   background-color: white;
 }
+
+a.btn-secondary {
+  color: #ddd;
+  border-color: #000;
+  background-color: #000;
+}
