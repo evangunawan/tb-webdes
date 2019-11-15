@@ -1,5 +1,9 @@
+/* -------------- */
+/*     Global     */
+/* -------------- */
 body {
     scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -11,6 +15,10 @@ body {
     height: 100vh;
 }
 
+
+/* ------------------ */
+/*      Section 1     */
+/* ------------------ */
 #banner-tech-1 {
     background-image: url('../images/home-charger.jpg');
     background-size: cover;
@@ -18,17 +26,80 @@ body {
     background-position: center;
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
+.content-upper {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+}
+
+.content-upper p {
+    padding: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.content-lower {
+    position: absolute;
+    bottom: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-content {
+    width: 70px;
+    height: 70px;
+    margin: 3px 30px;
+}
+
+.separator {
+    border-left: 1px solid white;
+    margin: 0 30px;
+}
+
+.item-content {
+    text-align: center;
+}
+
+.subtext-item {
+    color: white;
+}
+
+
+/* ------------------ */
+/*      Section 2     */
+/* ------------------ */
 #banner-tech-2 {
     background-image: url('../images/solar_roof.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
-    height: 80%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+
+/* ------------------ */
+/*    Video Section   */
+/* ------------------ */
+#charge-video {
+    position: absolute;
+    object-fit: cover;
+    height: 100vh;
     width: 100%;
 }
 
+
+/* ------------------ */
+/*      Section 3     */
+/* ------------------ */
 #banner-tech-3 {
     background-image: url('../images/where_you_park.jpg');
     background-size: cover;
@@ -38,24 +109,15 @@ body {
     width: 100%;
 }
 
+
+/* ------------------ */
+/*      Section 4     */
+/* ------------------ */
 #banner-tech-4 {
     background-image: url('../images/on_the_road.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 80%;
-    width: 100%;
-}
-
-.description-tech {
-    background-color: #f1f1f1;
-    height: 20%;
-    width: 100%;
-}
-
-#charge-video {
-    position: absolute;
-    object-fit: cover;
-    height: 100vh;
     width: 100%;
 }
