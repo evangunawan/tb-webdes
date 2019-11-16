@@ -1,0 +1,65 @@
+.carousel{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+}
+.carousel_images{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.carousel_track-container{
+    background: lightgreen;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.carousel_track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+.carousel_slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.carousel_nav{
+/*    background: pink;*/
+    position: absolute;
+    top: 95%;
+    left: 600px;
+    padding: 10px 0;
+}
+.carousel_indicator{
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: grey;
+    margin: 0 12px;
+}
+.carousel_indicator.current-slide{
+    background: black;
+}
+.teks_model{
+    position: absolute;
+    top: 10%;
+    left: 44%;
+    text-align: center;
+}
+.teks_model p{
+    color: aliceblue;
+}
+#type{
+    font-size: 54px;
+}
+#navbar{
+    background-color: black;
+}

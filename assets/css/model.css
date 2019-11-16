@@ -1,0 +1,96 @@
+[class*="banner-"]{
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-1{background-image: url(../images/produk/models.jpg);}
+.banner-2{background-image: url(../images/produk/modelx.jpg);}
+.banner-3{background-image: url(../images/produk/modely.jpg);}
+.banner-4{background-image: url(../images/produk/model3.jpg);}
+.banner-5{background-image: url(../images/produk/roadster.jpg)}
+.teks_model{
+    position: absolute;
+    top: 10%;
+    left: 44%;
+    text-align: center;
+}
+.teks_model p{
+    color: aliceblue;
+}
+#type{
+    font-size: 54px;
+}
+#bag1 {
+    position: relative;
+}
+#bag1 .myCanvas {
+    width: 55px;
+    margin-left: 413px;
+    margin-top: 563px;
+}
+#bag1 .needle {
+    width: 5px;
+    height: 25px;
+    background: red;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    display: inline-block;
+    left:435px;
+    position: absolute;
+    top: 570px;
+    transform: rotate(90deg);
+    -webkit-animation-name: move;
+    -webkit-animation-duration:1.5s;
+    transform-origin: bottom;
+}
+@-webkit-keyframes move {
+  0% {
+    transform: rotate(-90deg);
+  }
+}
+.value{
+    font-size: 30px;
+    color: darkgray; 
+}
+.keterangan{
+    color: darkgray;
+}
+#bag1 .value{
+    margin-left: 10px; 
+}
+#bag1 .keterangan{
+    margin-left: 420px;
+}
+#bag2{
+    position: absolute;
+    top: 570px;
+    left: 44%;
+    text-align: center;
+}
+#bag3{
+    position: absolute;
+    top: 570px;
+    left: 800px;
+    text-align: center;
+}
+#bag4{
+    position: absolute;
+    top: 590px;
+    left: 940px;
+}
+#bag4 .btn-order{
+    width: 120px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: transparent;
+}
+#bag4 .btn-order:hover{
+    background-color: black;
+    color: white;
+}
+#navbar{
+    background-color: black;
+}
