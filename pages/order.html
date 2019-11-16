@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Order Page">
+        <meta name="author" content="Jacobus Calvin">
+        <title>Order</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="../assets/css/order.css">
+        <link rel="stylesheet" href="../assets/css/navbar.css">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/footer.css">
+
+
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div id="navbar" class="bg-dark">
+            <div class="nav-left">
+                <a href="index.html">
+                    <img class="logo" src="../assets/images/logo-white.svg" alt="logo">
+                </a>
+            </div>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="models.html">MODELS</a></li>
+                    <li><a href="technology.html">TECHNOLOGY</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a class="text-light" href="order.html">ORDER</a>
+            </div>
+        </div>
+
+        <!-- Body -->
+        <div class="highlight-section">
+            <div class="grid-item">
+                <img src="../assets/images/order-1.jpg" class="img-content">
+            </div>
+
+            <div class="grid-transparent">
+            </div>
+            
+            <div class="grid-item">
+                <img src="../assets/images/order-2.jpg" class="img-content">
+            </div>
+            
+            <div class="grid-transparent">
+            </div>
+            
+            <div class="grid-item">
+                <iframe class="video-frame" src="https://www.youtube.com/embed/tw4jkyfY4HE?&autoplay=1&loop=1&controls=0" allowfullscreen></iframe>
+            </div>
+            
+            <div class="grid-transparent">
+            </div>
+            
+            <div class="grid-item">
+                <img src="../assets/images/order-3.jpg" class="img-content">
+            </div>
+            
+            <div class="grid-transparent">
+            </div>
+            
+            <div class="grid-item">
+                <img src="../assets/images/order-4.jpg" class="img-content">
+            </div>
+        </div>
+
+        <h1 class="order-title">Get Yours Now!</h1>
+        <div class="order-section">
+            <div class="col-50">
+                <div class="order-container">
+                    <h1>Personal Information</h1>
+                    <p><i>Fill in all the requisition below</i></p>
+                    <hr style="margin-bottom: 30px;">
+                    
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address">
+
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city">
+
+                    <label for="state">State</label>
+                    <input type="text" name="state" id="state">
+
+                    <label for="zip">Zip</label>
+                    <input type="number" name="zip" id="zip">
+                </div>
+            </div>
+            <div class="col-50">
+                <div class="order-container">
+                    <h1>Order Details</h1>
+                    <p><i>Fill in all the requisition below</i></p>
+                    <hr style="margin-bottom: 30px;">
+
+                    <label for="type">Car Model</label>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            MODELS
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Tesla Model S</a>
+                            <a class="dropdown-item" href="#">Tesla Model 3</a>
+                            <a class="dropdown-item" href="#">Tesla Model X</a>
+                            <a class="dropdown-item" href="#">Tesla Model Y</a>
+                        </div>
+                    </div>
+                    <!-- <select name="type" class="dropdown-menu">
+                        <option value="Tesla Model S">Tesla Model S</option>
+                        <option value="Tesla Model 3">Tesla Model 3</option>
+                        <option value="Tesla Model X">Tesla Model X</option>
+                        <option value="Tesla Model Y">Tesla Model Y</option>
+                        <option value="Roadster">Roadster</option>
+                    </select> -->
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+
+                    <input type="submit" class="btn btn-outline-dark" value="ORDER"></button>
+                </div>    
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <section class="section-footer">
+            <footer id="footer">
+                <div class="footer-inner">
+                <div class="footer-item">
+                    <h3>ABOUT TESLA</h3>
+                    <hr>
+                    <p>
+                    Tesla continues to make products accessible and affordable to more and more people, ultimately accelerating the advent of clean transport and clean energy production.
+                    </p>
+                    <div class="socials">
+                    <a href="https://twitter.com/tesla?lang=en"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/teslamotors/?hl=en"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <h3>REACH US</h3>
+                    <hr>
+                    <ul class="contacts">
+                    <li><i class="fas fa-map-marker-alt"></i> &nbsp;3500 Deer Creek Road, CA 94304</li>
+                    <li><i class="fas fa-phone"></i> 202-555-0130</li>
+                    <li><i class="fas fa-envelope"></i> contact@tesla.com</li>
+                    <li><i class="fas fa-globe"></i> www.tesla.com</li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3>LINKS</h3>
+                    <hr>
+                    <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="footer-copyright">
+                Tesla &copy; 2019. All rights reserved. 
+                </div>
+            </footer>
+        </section>
+
+    </body>
+</html>

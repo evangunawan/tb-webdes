@@ -1,0 +1,87 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* --------------------------- */
+/*      Highlight Section      */
+/* --------------------------- */
+.highlight-section{
+    display: grid;
+    grid-template-columns: 320px 400px 320px;
+    grid-template-rows: 190px 250px 190px;
+    grid-gap: 0;
+    height: 100vh;
+    padding-top: 77px;
+    justify-content: center;
+}
+
+.grid-item {
+
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.video-frame {
+    width: 400px;
+    height: 250px;
+    border: 0;
+}
+
+.img-content {
+    width: 320px;
+    height: 190px;
+}
+
+
+/* ----------------------- */
+/*      Order Section      */
+/* ----------------------- */
+.order-title {
+    margin: 64px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.order-section {
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.col-50 {
+    -ms-flex: 50%; 
+    flex: 50%;
+    padding: 0 100px;
+}
+
+.order-container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+input[type=text], input[type=email], input[type=number] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.btn {
+    width: 100%;
+}
