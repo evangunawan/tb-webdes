@@ -11,6 +11,10 @@ a,p {
   color: #111;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1,h2,h3 {
   font-family: 'Noto Sans', sans-serif;
 }
@@ -41,7 +45,8 @@ h1,h2,h3 {
 .col-12 { width: 100% }
 
 .text-black { color: #111; }
-.text-gray { color: #aaa }
+.text-light { color: #eee; }
+.text-gray { color: #aaa; }
 .text-primary { color: #0074d9; }
 .text-secondary { color: #2ecc40 }
 .text-info { color: #39CCCC }
@@ -64,4 +69,10 @@ a.btn-primary {
   color: #111;
   border-color: white;
   background-color: white;
+}
+
+a.btn-secondary {
+  color: #ddd;
+  border-color: #000;
+  background-color: #000;
 }

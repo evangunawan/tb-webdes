@@ -17,7 +17,7 @@ h2.section-title {
 
 .section-content .content-wrap {
   /* display: block; */
-  height: 350px;
+  /* he ight: 350px; */
 }
 
 .content-tech {
@@ -30,6 +30,7 @@ h2.section-title {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 400px;  
 }
 
 .desc { 
@@ -39,4 +40,69 @@ h2.section-title {
 
 .desc > h2 { 
   font-size: 1.8rem;
+  margin: 8px 0px;
+}
+
+.desc > p {
+  margin-top: 0px;
+  color: #ddd;
+  font-size: 0.9rem;
+}
+
+.content-gallery {
+  padding: 32px 0px;
+  display: block;
+}
+
+.content-gallery .gallery { 
+  display: block;
+  position: relative;
+  width: 1201px;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+}
+
+.content-gallery .header{
+  text-align: center;
+  margin-bottom: 32px;
+
+}
+
+.content-gallery .header h2 {
+  margin: 12px 0px;
+  font-size: 2.0rem;
+}
+
+.gallery .gal-big {
+  display: inline-block;  
+  position: relative;
+  margin: -4px;
+}
+
+.gallery .gal-big img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.gallery .gal-big .gal-desc {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  background-color: rgba(0,0,0,0.4);
+  padding: 0px 16px;
+
+  opacity: 0;
+}
+
+.gal-desc h3 {
+  margin-bottom: 4px; 
+}
+
+.gal-desc p {
+  margin-top: 6px;
+  color: #ddd;
 }
