@@ -23,6 +23,7 @@
 }
 #bag1 {
     position: relative;
+    margin: 10px;
 }
 #bag1 .myCanvas {
     width: 55px;
@@ -37,7 +38,6 @@
     border-bottom-right-radius: 5px;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
-    display: inline-block;
     left:435px;
     position: absolute;
     top: 570px;
@@ -66,20 +66,23 @@
 }
 #bag2{
     position: absolute;
-    top: 570px;
-    left: 44%;
     text-align: center;
+    left: 44%;
+    top: 570px;
+    margin: 10px;
 }
 #bag3{
     position: absolute;
     top: 570px;
     left: 800px;
     text-align: center;
+    margin: 10px;
 }
 #bag4{
     position: absolute;
-    top: 590px;
+    top: 580px;
     left: 940px;
+    margin: 10px;
 }
 #bag4 .btn-order{
     width: 120px;
