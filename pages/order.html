@@ -9,17 +9,17 @@
 
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-        <link rel="stylesheet" href="../assets/css/order.css">
         <link rel="stylesheet" href="../assets/css/navbar.css">
         <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/order.css">
         <link rel="stylesheet" href="../assets/css/footer.css">
 
+        <script src="../assets/js/order-pricing.js"></script>
 
     </head>
-    <body>
+    <body> 
         <!-- Navbar -->
         <div id="navbar" class="bg-dark">
             <div class="nav-left">
@@ -28,7 +28,7 @@
                 </a>
             </div>
             <div class="nav-center">
-                <ul class="nav-links">
+                <ul class="nav-links">            
                     <li><a href="models.html">MODELS</a></li>
                     <li><a href="technology.html">TECHNOLOGY</a></li>
                     <li><a href="contact.html">CONTACT US</a></li>
@@ -41,36 +41,38 @@
 
         <!-- Body -->
         <div class="highlight-section">
-            <div class="grid-item">
-                <img src="../assets/images/order-1.jpg" class="img-content">
-            </div>
+            <div class="grid-highlight">
+                <div class="grid-item">
+                    <img src="../assets/images/order-1.jpg" class="img-content">
+                </div>
 
-            <div class="grid-transparent">
-            </div>
-            
-            <div class="grid-item">
-                <img src="../assets/images/order-2.jpg" class="img-content">
-            </div>
-            
-            <div class="grid-transparent">
-            </div>
-            
-            <div class="grid-item">
-                <iframe class="video-frame" src="https://www.youtube.com/embed/tw4jkyfY4HE?&autoplay=1&loop=1&controls=0" allowfullscreen></iframe>
-            </div>
-            
-            <div class="grid-transparent">
-            </div>
-            
-            <div class="grid-item">
-                <img src="../assets/images/order-3.jpg" class="img-content">
-            </div>
-            
-            <div class="grid-transparent">
-            </div>
-            
-            <div class="grid-item">
-                <img src="../assets/images/order-4.jpg" class="img-content">
+                <div class="grid-transparent">
+                </div>
+                
+                <div class="grid-item">
+                    <img src="../assets/images/order-2.jpg" class="img-content">
+                </div>
+                
+                <div class="grid-transparent">
+                </div>
+                
+                <div class="grid-item">
+                    <iframe class="video-frame" src="https://www.youtube.com/embed/tw4jkyfY4HE?&autoplay=1&loop=1&controls=0" allowfullscreen></iframe>
+                </div>
+                
+                <div class="grid-transparent">
+                </div>
+                
+                <div class="grid-item">
+                    <img src="../assets/images/order-3.jpg" class="img-content">
+                </div>
+                
+                <div class="grid-transparent">
+                </div>
+                
+                <div class="grid-item">
+                    <img src="../assets/images/order-4.jpg" class="img-content">
+                </div>
             </div>
         </div>
 
@@ -83,7 +85,7 @@
                     <hr style="margin-bottom: 30px;">
                     
                     <label for="fname">First Name</label>
-                    <input type="text" name="fname" id="fname">
+                    <input type="text" name="fname" id="fname" required>
 
                     <label for="lname">Last Name</label>
                     <input type="text" name="lname" id="lname">
@@ -111,32 +113,19 @@
                     <hr style="margin-bottom: 30px;">
 
                     <label for="type">Car Model</label>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            MODELS
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Tesla Model S</a>
-                            <a class="dropdown-item" href="#">Tesla Model 3</a>
-                            <a class="dropdown-item" href="#">Tesla Model X</a>
-                            <a class="dropdown-item" href="#">Tesla Model Y</a>
-                        </div>
-                    </div>
-                    <!-- <select name="type" class="dropdown-menu">
-                        <option value="Tesla Model S">Tesla Model S</option>
-                        <option value="Tesla Model 3">Tesla Model 3</option>
-                        <option value="Tesla Model X">Tesla Model X</option>
-                        <option value="Tesla Model Y">Tesla Model Y</option>
+                    <select name="type" class="select-menu" id="select-model" onChange="priceConvert()">
+                        <option value="" disabled selected>Choose One</option>
+                        <option value="ModelS">Tesla Model S</option>
+                        <option value="Model3">Tesla Model 3</option>
+                        <option value="ModelX">Tesla Model X</option>
+                        <option value="ModelY">Tesla Model Y</option>
                         <option value="Roadster">Roadster</option>
-                    </select> -->
+                    </select>
+   
+                    <label for="price">Price ($.)</label>
+                    <p id="price" style="font-weight: bold;"></p>
 
-                    <label for="lname">Last Name</label>
-                    <input type="text" name="lname" id="lname">
-
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-
-                    <input type="submit" class="btn btn-outline-dark" value="ORDER"></button>
+                    <input type="submit" class="submit-btn" value="CHECKOUT ORDER" onClick="reviewOrder()"></button>
                 </div>    
             </div>
         </div>
