@@ -63,7 +63,7 @@ body {
 .col-50 {
     -ms-flex: 50%; 
     flex: 50%;
-    padding: 0 100px;
+    padding: 0 30px;
 }
 
 .order-container {
