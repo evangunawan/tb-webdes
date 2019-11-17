@@ -19,6 +19,12 @@ h1,h2,h3 {
   font-family: 'Noto Sans', sans-serif;
 }
 
+hr { 
+  border: none;
+  background-color: #ccc;
+  height: 1px;
+}
+
 /* Grid Layout */
 .row::after {
   content: "";
@@ -46,12 +52,16 @@ h1,h2,h3 {
 
 .text-black { color: #111; }
 .text-light { color: #eee; }
-.text-gray { color: #aaa; }
+.text-gray { color: #444; }
 .text-primary { color: #0074d9; }
 .text-secondary { color: #2ecc40 }
 .text-info { color: #39CCCC }
 .text-warning { color: #ff851b }
 .text-danger { color: #FF4136 }
+
+.w-50 {
+  width: 50%;
+}
 
 a.btn {
   display: inline-block;

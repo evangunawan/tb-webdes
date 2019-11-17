@@ -6,6 +6,10 @@ body {
     box-sizing: border-box;
 }
 
+h1,p {
+    margin: 4px 0px;
+}
+
 /* --------------------------- */
 /*      Highlight Section      */
 /* --------------------------- */
@@ -44,6 +48,7 @@ body {
 /* ----------------------- */
 .order-title {
     margin: 64px 0;
+    margin-top: 0px;
     display: flex;
     justify-content: center;
 }
@@ -54,6 +59,8 @@ body {
     -ms-flex-wrap: wrap; 
     flex-wrap: wrap;
     margin-bottom: 50px;
+    width: 1400px;
+    margin: 0px auto;
 }
 
 .col-50 {
@@ -67,15 +74,16 @@ body {
     padding: 5px 20px 15px 20px;
     border: 1px solid lightgrey;
     border-radius: 3px;
+    overflow:auto;
 }
 
-input[type=text], input[type=email], input[type=number] {
+/* input[type=text], input[type=email], input[type=number] {
     width: 100%;
     margin-bottom: 20px;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 3px;
-}
+} */
 
 label {
     margin-bottom: 10px;
@@ -83,5 +91,7 @@ label {
 }
 
 .btn {
+    margin-top: 8px;
     width: 100%;
 }
+

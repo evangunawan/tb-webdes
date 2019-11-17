@@ -1,0 +1,169 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="author" content="Evan Gunawan">
+  <link rel="stylesheet" href="../assets/css/navbar.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="../assets/css/contact.css">
+  <link rel="stylesheet" href="../assets/css/form.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="navbar" class="bg-dark nav-static">
+    <div class="nav-left">
+      <a href="#">
+        <img class="logo" src="../assets/images/logo-white.svg" alt="logo">
+      </a>
+    </div>
+    <div class="nav-center">
+      <ul class="nav-links">
+        <li><a href="models.html">MODELS</a></li>
+        <li><a href="technology.html">TECHNOLOGY</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <a class="text-light" href="order.html">ORDER</a>
+    </div>
+  </div>
+
+  <section class="section-contact">
+    <div class="content-wrap">
+      <div class="header">
+        <h2>Contact</h2>
+        <hr>
+      </div>
+      <p>You can contact us either by phone or email, or just send us a ticket below!</p>
+      <div class="contact-list">
+        <div class="item">
+          <h3>Sales Department</h3>
+          <p class="text-gray">Contact our sales department for more purchashing info, send a message to <b>sales@tesla.com</b></p>
+        </div>
+        <div class="item">
+          <h3>Careers</h3>
+          <p class="text-gray">Visit our branch office in some region for more information, feel free to ask anything at career@tesla.com</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="ticket">
+        <h3 style="font-size: 1rem">Send us a ticket or question</h3>
+
+        <form id="form-ticket" method="POST">
+          <div class="form-wrap">
+            <div class="form-col">
+              <div class="form-item" >
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname">
+              </div>
+              <div class="form-item">
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname">
+              </div>
+              <div class="form-item full">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+              </div>
+              <div class="form-item full">
+                <label for="countries">Country:</label>
+                <select name="country" id="countries">
+                  <option value="US">United States</option>
+                  <option value="UK">United Kingdom</option>
+                  <option value="CANADA">Canada</option>
+                  <option value="AUS">Australia</option>
+                  <option value="CH">China</option>
+                  <option value="HK">Hong Kong</option>
+                  <option value="JP">Japan</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+  
+            </div>
+            <div class="form-col">
+              <div class="form-item full">
+                <label for="topics">Subject</label>
+                <select name="subject" id="topics">
+                  <option value="sales">Sales</option>
+                  <option value="technical">Technical Support</option>
+                  <option value="career">Career Support</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-item full">
+                <label for="message">Message</label>
+                <textarea name="msg" id="message"></textarea>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray form-subtitle">By clicking "submit" button, I agree to be contacted by tesla with the contact provided.</p>
+          <div class="btn-wrap">
+            <button id="contact-submit" onclick="sendMessage()" type="button">SUBMIT</button>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-footer">
+    <footer id="footer">
+      <div class="footer-inner">
+        <div class="footer-item">
+          <h3>ABOUT TESLA</h3>
+          <hr>
+          <p>
+            Tesla continues to make products accessible and affordable to more and more people, ultimately accelerating
+            the advent of clean transport and clean energy production.
+          </p>
+          <div class="socials">
+            <a href="https://twitter.com/tesla?lang=en"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/teslamotors/?hl=en"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-item">
+          <h3>REACH US</h3>
+          <hr>
+          <ul class="contacts">
+            <li><i class="fas fa-map-marker-alt"></i> &nbsp;3500 Deer Creek Road, CA 94304</li>
+            <li><i class="fas fa-phone"></i> 202-555-0130</li>
+            <li><i class="fas fa-envelope"></i> contact@tesla.com</li>
+            <li><i class="fas fa-globe"></i> www.tesla.com</li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h3>LINKS</h3>
+          <hr>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="models.html">Models</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        Tesla &copy; 2019. All rights reserved.
+      </div>
+    </footer>
+  </section>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h2>Thank you for the message!</h2>
+      <p>We will review your message, and contact you later. Please wait maximum 24 hours before the reply!</p>
+    </div>
+  </div>
+
+</body>
+
+<script src="../assets/js/default.js"></script>
+
+</html>

@@ -1,0 +1,78 @@
+
+.form-wrap { 
+  font-family: 'noto sans', sans-serif;
+  display: flex;
+  justify-content: center;
+
+}
+
+.form-col {
+  flex-basis: 100%;
+}
+
+.form-item {
+  display: block;
+  margin-bottom: 8px;
+  padding: 0px 8px;
+  width: 50%;
+  float: left;
+}
+
+.form-item.full {
+  display: block;
+  width: 100%;
+  margin: 0px;
+  margin-bottom: 8px;
+}
+
+.form-item label {
+  display: block;
+  margin-bottom: 4px;
+  
+}
+
+.form-item input, .form-item select {
+  width: 100%;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  height: 30px;
+}
+
+.form-item textarea {
+  resize: none;
+  width: 100%;
+  height: 94px;
+  display: block;
+  
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+p.form-subtitle {
+  padding-left: 8px;
+  font-size: 0.8rem;
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 8px;
+}
+
+.btn-wrap button {
+  display: inline-block;
+  padding: 8px 32px;
+
+  border: none;
+
+  background-color: #0074d9;
+  color: white;
+
+  font-size: 1.0rem;
+  font-weight: bold;
+}
+
+.btn-wrap button:hover {
+  background-color: #0086fc;
+}
