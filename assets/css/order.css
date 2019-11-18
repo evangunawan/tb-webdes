@@ -60,6 +60,10 @@ body {
     margin-bottom: 50px;
 }
 
+.order-section > #order-form { 
+    width: 100%;
+}
+
 
 .col-50 {
     /* -ms-flex: 50%;  */

@@ -32,4 +32,8 @@ function reviewOrder(){
     else {
         alert("Please choose your order car..")
     }
+    
+    document.getElementById('order-form').reset();
+    document.getElementById('price').innerHTML = '';
+    price = 0;
 }
