@@ -60,11 +60,14 @@ body {
     margin-bottom: 50px;
 }
 
+
 .col-50 {
-    -ms-flex: 50%; 
-    flex: 50%;
-    padding: 0 30px;
+    /* -ms-flex: 50%;  */
+    /* flex: 50%; */
+    width: 50%;
+    padding: 0 px;
 }
+
 
 .order-container {
     background-color: #f2f2f2;
@@ -148,4 +151,10 @@ label {
 .submit-btn:hover {
     background-color: #555555;;
     color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .col-50 {
+        width: 100%;
+    }
 }
